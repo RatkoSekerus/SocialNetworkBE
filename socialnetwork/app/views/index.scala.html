@@ -1,0 +1,14 @@
+@(users : Seq[models.User])
+
+@main("Welcome to Play") {
+  <h1>Welcome to Playy!
+    @users.length</h1>
+
+  <h3>Registration of user:</h3>
+  <br>
+<h3>users:</h3>
+
+@for(user <- users) {
+  <h5>@user</h5>
+}
+}
